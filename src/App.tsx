@@ -8,14 +8,13 @@ import Services from './modules/Services'
 import Testimonials from './modules/Testimonial'
 import ContactUs from './modules/ContactUs'
 
-// Anda bisa membuat komponen pembatas langsung di sini atau di file terpisah
-const LuxuryDivider = () => (
-  <div className="flex justify-center items-center py-4 bg-white">
-    <div className="w-24 md:w-48 h-px bg-stone-200"></div>
-    <div className="mx-4 w-2 h-2 rotate-45 bg-[#0a1d37] opacity-50"></div>
-    <div className="w-24 md:w-48 h-px bg-stone-200"></div>
-  </div>
-);
+// const LuxuryDivider = () => (
+//   <div className="flex justify-center items-center py-4 bg-white">
+//     <div className="w-24 md:w-48 h-px bg-stone-200"></div>
+//     <div className="mx-4 w-2 h-2 rotate-45 bg-[#0a1d37] opacity-50"></div>
+//     <div className="w-24 md:w-48 h-px bg-stone-200"></div>
+//   </div>
+// );
 
 function App() {
   const companyName = "Website Name"
@@ -33,7 +32,7 @@ function App() {
       <AboutUs />
       <Services />
       <Testimonials />
-      <LuxuryDivider />
+      {/* <LuxuryDivider /> */}
       <ContactUs />
     </div>
   )
