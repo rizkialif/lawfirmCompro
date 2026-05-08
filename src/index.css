@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Tambahkan di bawah @import "tailwindcss"; */
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    /* Durasi 40s untuk scroll santai. Bisa diubah ke 20s jika ingin lebih cepat */
+    animation: marquee 40s linear infinite;
+}
+
+/* Menghentikan animasi saat user mengarahkan kursor ke atas kartu (Opsional tapi bagus untuk UX) */
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+.mask-fade-edges {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+@keyframes bounce-slow {
+
+    0%,
+    100% {
+        transform: translateY(-5%);
+    }
+
+    50% {
+        transform: translateY(5%);
+    }
+}
+
+.animate-bounce-slow {
+    animation: bounce-slow 4s ease-in-out infinite;
+}
