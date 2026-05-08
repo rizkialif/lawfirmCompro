@@ -7,6 +7,7 @@ import AboutUs from './modules/AboutUs'
 import Services from './modules/Services'
 import Testimonials from './modules/Testimonial'
 import ContactUs from './modules/ContactUs'
+import LoadingScreen from './components/LoadingScreen'
 
 // const LuxuryDivider = () => (
 //   <div className="flex justify-center items-center py-4 bg-white">
@@ -17,7 +18,7 @@ import ContactUs from './modules/ContactUs'
 // );
 
 function App() {
-  const companyName = "Website Name"
+  const companyName = "Lawyer Company"
   const menu = [
     { label: "Tentang Kami", href: "#aboutus" },
     { label: "Layanan", href: "#services" },
@@ -26,13 +27,12 @@ function App() {
 
   return (
     <div className="antialiased text-stone-800">
+      <LoadingScreen />
       <Navbar companyName={companyName} menu={menu} />
-      {/* <HeroSection /> */}
       <InteractiveScale />
       <AboutUs />
       <Services />
       <Testimonials />
-      {/* <LuxuryDivider /> */}
       <ContactUs />
     </div>
   )
