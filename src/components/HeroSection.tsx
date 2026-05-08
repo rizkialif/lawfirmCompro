@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import DynamicModal, { type FormField, type ActionButton } from './DynamicModal';
 
 export default function HeroSection({
@@ -22,6 +22,7 @@ export default function HeroSection({
             isPrimary: true,
             onClick: (formData) => {
                 setIsLoginModalOpen(false);
+                console.log("send data : ", formData)
             }
         }
     ];

@@ -1,4 +1,3 @@
-import React from 'react';
 import Card, { type CardProps } from '../components/Card';
 
 // Data dummy testimoni (bisa diganti dengan data dari API/Database nanti)

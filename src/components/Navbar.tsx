@@ -35,6 +35,7 @@ export default function Navbar({ companyName, menu }: NavbarProps) {
             isPrimary: true,
             onClick: (formData) => {
                 setIsLoginModalOpen(false)
+                console.log("send data : ", formData)
             }
         }
     ]

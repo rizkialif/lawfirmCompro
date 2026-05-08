@@ -1,5 +1,3 @@
-import React from 'react';
-
 const AboutUs = () => {
   return (
     <section id="aboutus" className="scroll-mt-24 py-24 bg-white relative overflow-hidden">

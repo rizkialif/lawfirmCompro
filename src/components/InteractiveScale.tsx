@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const InteractiveScale = () => {
     const [isHovered, setIsHovered] = useState(false);
