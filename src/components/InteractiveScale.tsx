@@ -70,11 +70,11 @@ const InteractiveScale = () => {
                                 <div className="absolute bottom-full right-0 w-0.5 h-16 bg-slate-400 origin-bottom rotate-[30deg]"></div>
                             </div>
 
-                            <div
+                            {/* <div
                                 className={`absolute bottom-3 -left-8 md:-left-10 w-16 md:w-20 h-24 border-2 border-dashed border-blue-400 bg-blue-50/50 rounded-lg flex items-center justify-center transition-all duration-500 ${isHovered ? 'opacity-0 scale-50' : 'opacity-100 scale-100 animate-pulse'}`}
                             >
                                 <span className="text-blue-500 font-bold text-[9px] md:text-[11px] text-center uppercase tracking-wider leading-tight">Arahkan<br />Mouse</span>
-                            </div>
+                            </div> */}
 
                             <div
                                 className="absolute -left-10 md:-left-12 w-20 md:w-24 h-32 flex flex-col items-center justify-end transition-all duration-[1200ms]"
