@@ -1,7 +1,6 @@
 import ServiceCard from '../components/ServiceCard';
 
 const servicesData = [
-    // ... (Data servicesData Anda tetap sama seperti sebelumnya) ...
     {
         title: "Hukum Perusahaan & Komersial",
         description: "Pendampingan legalitas bisnis, penyusunan kontrak, merger, akuisisi, serta kepatuhan regulasi perusahaan untuk mengamankan aset Anda.",
@@ -27,31 +26,18 @@ const servicesData = [
 const Services = () => {
     return (
         <section id="services" className="relative py-24 bg-slate-50 overflow-hidden scroll-mt-24">
-
-            {/* =========================================================
-                BACKGROUND DEWI KEADILAN TERPUSAT (WATERMARK MODE)
-                ========================================================= */}
             <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none p-10 lg:p-20">
                 <img
-                    // Menggunakan URL gambar yang lebih bersih untuk siluet terpusat
                     src="https://images.unsplash.com/photo-1618170281023-e18e69d74917?q=80&w=2000&auto=format&fit=crop"
                     alt="Themis Watermark"
-                    // Stylization: grayscale, kontras tinggi, opasitas 20%
                     className="w-full max-w-4xl h-auto object-contain grayscale brightness-90 contrast-125 opacity-20 transition-opacity duration-1000"
                 />
             </div>
-            {/* ========================================================= */}
-
-
-            {/* KONTEN (Relative z-10 agar di atas gambar) */}
             <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-
                 <div className="text-center max-w-3xl mx-auto mb-20">
-                    {/* Header Badge */}
                     <div className="inline-flex items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-[#0a1d37]/5 border border-[#0a1d37]/10 text-[#0a1d37] text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-sm shadow-sm">
                         Area Praktik Utama
                     </div>
-                    {/* Header Title - Pastikan teks memiliki kontras tinggi dengan warna Navy gelap */}
                     <h3 className="text-[#0a1d37] text-4xl lg:text-5xl font-serif leading-tight mb-6">
                         Keahlian Kami untuk Melindungi Aset & Hak Anda.
                     </h3>
@@ -59,8 +45,6 @@ const Services = () => {
                         Kami menyediakan advokasi hukum yang komprehensif, disesuaikan dengan kebutuhan spesifik individu maupun korporasi dengan standar etika tertinggi.
                     </p>
                 </div>
-
-                {/* Grid Services: Pastikan ServiceCard memiliki bg-white padat agar menutupi gambar di belakangnya */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
                     {servicesData.map((service, index) => (
                         <ServiceCard

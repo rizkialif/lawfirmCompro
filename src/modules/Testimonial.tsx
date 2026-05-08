@@ -26,10 +26,7 @@ const testimonialData: CardProps[] = [
 
 const Testimonials = () => {
     return (
-        // Menggunakan background navy agar terlihat mencolok dan mewah
         <section className="py-24 bg-[#0a1d37] overflow-hidden relative">
-
-            {/* Header Section (Teks Putih/Terang) */}
             <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 text-center">
                 <h2 className="text-stone-300 text-sm uppercase tracking-[0.3em] font-semibold mb-4">
                     Kepercayaan Klien
@@ -40,10 +37,7 @@ const Testimonials = () => {
             </div>
 
             {/* Area Carousel Berjalan */}
-            {/* Masking dengan gradient agar ujung kiri dan kanan terlihat memudar (fade out) */}
             <div className="relative w-full flex overflow-hidden mask-fade-edges">
-
-                {/* Kontainer yang dianimasikan (Perhatikan class animate-marquee) */}
                 <div className="flex gap-6 w-max animate-marquee pl-6">
 
                     {/* Mapping Data Asli */}
@@ -56,7 +50,7 @@ const Testimonials = () => {
                         />
                     ))}
 
-                    {/* Mapping Data Duplikat (Wajib untuk membuat ilusi scroll tak terbatas) */}
+                    {/* Mapping Data Duplikat */}
                     {testimonialData.map((data, index) => (
                         <Card
                             key={`duplicate-${index}`}

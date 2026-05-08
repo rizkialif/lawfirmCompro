@@ -11,12 +11,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, hre
     return (
         <div className="group relative bg-white p-8 lg:p-10 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col items-start overflow-hidden">
 
-            {/* Aksen Gradasi Halus (Muncul saat hover) */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
 
-            {/* Kontainer Ikon yang Lebih Dinamis */}
+
             <div className="relative mb-8">
-                {/* Lingkaran dekoratif di belakang ikon */}
                 <div className="absolute inset-0 bg-blue-100/50 rounded-full scale-150 blur-sm group-hover:bg-blue-200/50 transition-colors duration-500"></div>
                 <div className="relative z-10 text-[#0a1d37] group-hover:scale-110 transition-transform duration-500">
                     {icon}
@@ -31,7 +29,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, hre
                 {description}
             </p>
 
-            {/* Tautan CTA yang Lebih Menarik */}
             <a
                 href={href}
                 className="inline-flex items-center text-sm font-bold uppercase tracking-wider text-slate-400 group-hover:text-[#0a1d37] transition-colors duration-300"

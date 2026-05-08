@@ -1,16 +1,11 @@
 const AboutUs = () => {
   return (
     <section id="aboutus" className="scroll-mt-24 py-24 bg-white relative overflow-hidden">
-
-      {/* Ornamen Latar Belakang (Soft Glow) */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-blue-50 rounded-full blur-[100px] -z-10 opacity-70"></div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row items-center gap-20">
 
-          {/* =========================================
-              BAGIAN KIRI: VISUAL & GAMBAR (Dynamic Collage)
-              ========================================= */}
           <div className="w-full lg:w-1/2 relative">
 
             {/* Gambar Utama */}
@@ -20,11 +15,9 @@ const AboutUs = () => {
                 alt="Tim Pengacara Profesional"
                 className="w-full h-[450px] object-cover rounded-[2.5rem] shadow-2xl"
               />
-              {/* Efek Bingkai Melayang di belakang gambar utama */}
               <div className="absolute inset-0 border-2 border-[#0a1d37]/10 rounded-[2.5rem] translate-x-4 translate-y-4 -z-10"></div>
             </div>
 
-            {/* Gambar Sekunder (Tumpang Tindih di Kanan Bawah) */}
             <img
               src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=600"
               alt="Detail Hukum"
@@ -51,10 +44,8 @@ const AboutUs = () => {
               BAGIAN KANAN: TEKS & NILAI PERUSAHAAN
               ========================================= */}
           <div className="w-full lg:w-1/2 mt-12 lg:mt-0">
-
-            {/* Badge Header Modern */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 text-slate-600 text-sm font-medium mb-6">
-              <span className="w-2 h-2 rounded-full bg-[#C5A880]"></span> {/* Aksen aksen warna emas/champagne kecil */}
+              <span className="w-2 h-2 rounded-full bg-[#C5A880]"></span>
               Tentang Firma Kami
             </div>
 
@@ -70,11 +61,7 @@ const AboutUs = () => {
                 Berbasis di Bekasi, tim kami terdiri dari praktisi yang berdedikasi untuk mendefinisikan ulang standar keadilan melalui solusi yang elegan, transparan, dan berorientasi pada hasil jangka panjang.
               </p>
             </div>
-
-            {/* Grid Nilai Perusahaan (Modern Soft Cards) */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-
-              {/* Kartu Profesionalisme / Perlindungan */}
               <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:border-[#0a1d37]/20 hover:shadow-md transition-all duration-300 group">
                 <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-6 h-6 text-[#0a1d37]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
@@ -84,8 +71,6 @@ const AboutUs = () => {
                 <h4 className="text-[#0a1d37] font-bold text-lg mb-2">Perlindungan</h4>
                 <p className="text-slate-500 text-sm leading-relaxed">Menjaga standar etika tertinggi dalam melindungi hak dan aset Anda.</p>
               </div>
-
-              {/* Kartu Transparansi */}
               <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:border-[#0a1d37]/20 hover:shadow-md transition-all duration-300 group">
                 <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-6 h-6 text-[#0a1d37]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">

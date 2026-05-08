@@ -34,7 +34,6 @@ export default function DynamicModal({ isOpen, onClose, title, fields, actions }
     }
 
     return (
-        // Menggunakan Transition untuk efek pop-in dan fade yang mulus
         <Transition appear show={isOpen} as={Fragment}>
             <Dialog as="div" className="relative z-50" onClose={onClose}>
 
@@ -142,8 +141,8 @@ export default function DynamicModal({ isOpen, onClose, title, fields, actions }
                                             type="button"
                                             onClick={() => action.onClick(formData)}
                                             className={`w-full sm:w-auto cursor-pointer rounded-full px-8 py-3 text-sm font-semibold shadow-sm transition-all duration-300 hover:-translate-y-0.5 ${action.isPrimary
-                                                    ? 'bg-[#0a1d37] text-white hover:bg-blue-900 hover:shadow-lg'
-                                                    : 'bg-white border-2 border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-slate-50'
+                                                ? 'bg-[#0a1d37] text-white hover:bg-blue-900 hover:shadow-lg'
+                                                : 'bg-white border-2 border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-slate-50'
                                                 }`}
                                         >
                                             {action.label}
